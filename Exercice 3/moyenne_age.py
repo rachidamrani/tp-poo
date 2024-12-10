@@ -21,7 +21,6 @@ with open('titanic_survival.csv', encoding='utf-8') as csvfile:
     passagers_count = 0.0 # Compteur pour dénombrer le nombre de passagers ayant un âge valide dans le fichier CSV
 
     for row in reader:
-        print(row)
         age = row[0].split(',')[5]
 
         if is_valid_float(age):
